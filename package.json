@@ -1,0 +1,24 @@
+{
+  "name": "portfolio",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "clean": "prettier --write .",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/qua121/portfolio.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/qua121/portfolio/issues"
+  },
+  "homepage": "https://github.com/qua121/portfolio#readme",
+  "description": "",
+  "devDependencies": {
+    "prettier": "^3.6.2"
+  }
+}
