@@ -7,94 +7,143 @@
     <link rel="stylesheet" href="style.css" />
   </head>
   <body>
-    <div class="header">
-    <h1>Portfolio</h1>
-    <p>くあ</p>
-    </div>
+    <header class="header">
+      <h1>Portfolio</h1>
+      <p>くあ</p>
+    </header>
 
-    <div class="activity">
-    <p>
-      My activity
-      <br />
-      <button onclick="location.href = '#photography'">photography</button>
-      <button onclick="location.href = '#ilustaration'">ilustaration</button>
-      <button onclick="location.href = '#fishing'">fishing</button>
-      <button onclick="location.href = '#outdoor'">outdoor</button>
-    </p>
-    </div>
-    <section id="photography">
-      <h1>aaaaaaaaaaaaaa</h1>
-      <h1>ページ当たり単一アイテムの CSS カルーセル</h1>
-      <ul>
-        <li>
-          <h2>ページ 1</h2>
-        </li>
-        <li>
-          <h2>ページ 2</h2>
-        </li>
-        <li>
-          <h2>ページ 3</h2>
-        </li>
-        <li>
-          <h2>ページ 4</h2>
-        </li>
-      </ul>
+    <nav class="activity">
+      <p>My activity</p>
+      <div>
+        <button onclick="location.href = '#photography'">Photography</button>
+        <button onclick="location.href = '#illustration'">Illustration</button>
+        <button onclick="location.href = '#fishing'">Fishing</button>
+        <button onclick="location.href = '#outdoor'">Outdoor</button>
+      </div>
+    </nav>
+
+    <section id="photography" class="content-section">
+      <h2>Photography</h2>
+      <p>準備中</p>
     </section>
 
-    <section id="ilustaration">
-      <h1>aaaaaaaaaaaa</h1>
-            <div class="snap">
-        <img src="img/ggg.jpg" alt="ggg" />
-      </div>
-      <div class="snap">
-        <img src="img/hhh.jpg" alt="hhh" />
-      </div>
-      <div class="snap">
-        <img src="img/iii.jpg" alt="iii" />
-      </div>
-      <div class="snap">
-        <img src="img/jjj.jpg" alt="jjj" />
-      </div>
-      <div class="snap">
-        <img src="img/kkk.jpg" alt="jjj" />
-      </div>
-      <div class="snap">
-        <img src="img/lll.jpg" alt="lll" />
-      </div>
-      <div class="snap">
-        <img src="img/mmm.jpg" alt="mmm" />
-      </div>
-      <div class="snap">
-        <img src="img/nnn.jpg" alt="nnn" />
+    <section id="illustration" class="content-section">
+      <h2>Illustration</h2>
+      <div class="carousel-container">
+        <ul class="carousel">
+          <li class="carousel-item">
+            <img src="img/ggg.jpg" alt="イラスト 1" />
+            <div class="carousel-caption">
+              <h3>夕暮れの街並み</h3>
+              <p>
+                ノスタルジックな色合いで描かれた、どこか懐かしい街の風景です。
+                一日の終わりを告げる光が建物を優しく包み込みます。
+              </p>
+            </div>
+          </li>
+          <li class="carousel-item">
+            <img src="img/hhh.jpg" alt="イラスト 2" />
+            <div class="carousel-caption">
+              <h3>深海の幻想生物</h3>
+              <p>
+                暗闇に光る触手を持つ、未知の深海生物を想像して描きました。
+                神秘的な青色が特徴です。
+              </p>
+            </div>
+          </li>
+          <li class="carousel-item">
+            <img src="img/iii.jpg" alt="イラスト 3" />
+            <div class="carousel-caption">
+              <h3>森の守護者</h3>
+              <p>
+                苔むした巨木がそびえる、古代の森の番人。
+                静かに森を見守るその姿は、威厳に満ちています。
+              </p>
+            </div>
+          </li>
+          <li class="carousel-item">
+            <img src="img/jjj.jpg" alt="イラスト 4" />
+            <div class="carousel-caption">
+              <h3>未来都市の夜景</h3>
+              <p>
+                ネオンが輝く高層ビル群と、空を走る乗り物が特徴の未来都市。
+                SFの世界観を表現しました。
+              </p>
+            </div>
+          </li>
+          <li class="carousel-item">
+            <img src="img/kkk.jpg" alt="イラスト 5" />
+            <div class="carousel-caption">
+              <h3>空飛ぶ島の冒険</h3>
+              <p>
+                巨大な飛行船が向かう先は、雲の上に浮かぶ未知の島々。
+                壮大な冒険の始まりを描いています。
+              </p>
+            </div>
+          </li>
+          <li class="carousel-item">
+            <img src="img/lll.jpg" alt="イラスト 6" />
+            <div class="carousel-caption">
+              <h3>秘密の花園</h3>
+              <p>
+                誰も知らない場所にひっそりと咲く、魔法のような花々。
+                光と影のコントラストで幻想的に表現しました。
+              </p>
+            </div>
+          </li>
+          <li class="carousel-item">
+            <img src="img/mmm.jpg" alt="イラスト 7" />
+            <div class="carousel-caption">
+              <h3>雪国の小さな村</h3>
+              <p>
+                雪に覆われた山間の小さな村。
+                暖かな光が灯る家々が、厳しい冬に温もりを与えます。
+              </p>
+            </div>
+          </li>
+          <li class="carousel-item">
+            <img src="img/nnn.jpg" alt="イラスト 8" />
+            <div class="carousel-caption">
+              <h3>時の番人</h3>
+              <p>
+                砂時計と歯車に囲まれた、時間を司る存在。
+                過去、現在、未来を見つめる、その眼差しに注目です。
+              </p>
+            </div>
+          </li>
+        </ul>
       </div>
     </section>
 
-    <section id="fishing">
-      <h1>aaaaaaaaaaaaaaaaa</h1>
-              <div class="snap-photo-container">
-      <div class="snap">
-        <img src="img/aaa.jpg" alt="aaa" />
+    <section id="fishing" class="content-section">
+      <h2>Fishing</h2>
+      <div class="carousel-container">
+        <ul class="carousel">
+          <li class="carousel-item">
+            <img src="img/aaa.jpg" alt="釣り 1" />
+          </li>
+          <li class="carousel-item">
+            <img src="img/bbb.jpg" alt="釣り 2" />
+          </li>
+          <li class="carousel-item">
+            <img src="img/ccc.jpg" alt="釣り 3" />
+          </li>
+          <li class="carousel-item">
+            <img src="img/ddd.jpg" alt="釣り 4" />
+          </li>
+          <li class="carousel-item">
+            <img src="img/eee.jpg" alt="釣り 5" />
+          </li>
+          <li class="carousel-item">
+            <img src="img/fff.jpg" alt="釣り 6" />
+          </li>
+        </ul>
       </div>
-      <div class="snap">
-        <img src="img/bbb.jpg" alt="bbb" />
-     </div>
-      <div class="snap">
-        <img src="img/ccc.jpg" alt="ccc" />
-      </div>
-      <div class="snap">
-        <img src="img/ddd.jpg" alt="ddd" />
-      </div>
-      <div class="snap">
-        <img src="img/eee.jpg" alt="eee" />
-      </div>
-      <div class="snap">
-        <img src="img/fff.jpg" alt="fff" />
-      </div>
-      </section>
+    </section>
 
-    <section id="outdoor">
-      <h1>aaaaaaaaaaaaaaaa</h1>
-      </section>
-      
+    <section id="outdoor" class="content-section">
+      <h2>Outdoor</h2>
+      <p>準備中</p>
+    </section>
   </body>
 </html>
