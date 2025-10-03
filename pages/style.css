@@ -21,3 +21,112 @@ body {
   border-radius: 10px;
   margin: 20px;
 }
+
+button {
+  background-color: #4caf50;
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  margin: 5px;
+}
+
+.snap-photo-container {
+  display: flex;
+  overflow: auto;
+  width: 80vw;
+  max-width: 500px;
+  border: 2px solid #ccc;
+  border-radius: 10px;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 10px;
+  margin-top: 20px;
+
+  scroll-snap-type: x mandatory;
+
+  -ms-overflow-style: none; /* IE and Edge */
+  scrollbar-width: none; /* Firefox */
+}
+
+.snap-photo-container::-webkit-scrollbar {
+  display: none; /* Chrome, Safari, Opera*/
+}
+
+.snap-item {
+  flex: 0 0 100%;
+  width: 200px;
+  height: 150px;
+  background-color: #f0f0f0;
+  border-radius: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1.5em;
+  font-weight: bold;
+  scroll-snap-align: center;
+}
+
+ul {
+  width: 100vw;
+  height: 300px;
+  padding: 20px;
+  display: flex;
+  gap: 4vw;
+  overflow-x: scroll;
+  scroll-snap-type: x mandatory;
+  anchor-name: --myCarousel
+}
+
+li {
+  list-style-type: none;
+  background-color: #eee;
+  border: 1px solid #ddd;
+  padding: 20px;
+  flex: 0 0 100%;
+  scroll-snap-align: center;
+}
+
+li:nth-child(even) {
+  background-color: cyan;
+}
+
+ul::scroll-button(*) {
+  border: 0;
+  font-size: 2rem;
+  background: none;
+  color: rgb(0 0 0 / 0.7);
+  cursor: pointer;
+  position: absolute;
+  position-anchor: --myCarousel;
+
+
+}
+
+ul::scroll-button(*):hover,
+ul::scroll-button(*):focus {
+  color: rgb(0 0 0 / 1);
+}
+
+ul::scroll-button(*):active {
+  translate: 1px 1px;
+}
+
+ul::scroll-button(*):disabled {
+  color: rgb(0 0 0 / 0.2);
+  cursor: unset;
+}
+
+ul::scroll-button(left) {
+  content: "◄";
+  right: calc(anchor(left) - 70px);
+  bottom: calc(anchor(top) + 13px);
+
+}
+
+ul::scroll-button(right) {
+  content: "►";
+  left: calc(anchor(right) - 70px);
+  bottom: calc(anchor(top) + 13px);
+}
